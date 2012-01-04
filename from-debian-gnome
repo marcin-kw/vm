@@ -1,0 +1,19 @@
+sudo apt-get install vim
+
+sudo apt-get install git
+
+sudo apt-get install python-setuptools
+
+sudo easy_install virtualenv
+sudo easy_install pip
+sudo pip install virtualenvwrapper
+
+cp .bash_virtualenv ~/.
+source .bash_virtualenv
+
+echo " " >> ~/.bashrc
+echo "#virtualenv: enabling workon and mkvirtualenv" >> ~/.bashrc
+echo "if [ -f ~/.bash_virtualenv ]; then" >> ~/.bashrc
+echo "    . ~/.bash_virtualenv" >> ~/.bashrc
+echo "fi" >> ~/.bashrc
+
